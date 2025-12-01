@@ -1188,6 +1188,13 @@ export type ContactConnection = Connection & {
   edges?: Maybe<Array<Maybe<ContactConnectionEdges>>>;
 };
 
+export type GlobalBranding = {
+  __typename?: 'GlobalBranding';
+  logo?: Maybe<Scalars['String']['output']>;
+  logoAlt?: Maybe<Scalars['String']['output']>;
+  siteName?: Maybe<Scalars['String']['output']>;
+};
+
 export type GlobalContact = {
   __typename?: 'GlobalContact';
   email?: Maybe<Scalars['String']['output']>;
@@ -1206,16 +1213,44 @@ export type GlobalSeo = {
   __typename?: 'GlobalSeo';
   title?: Maybe<Scalars['String']['output']>;
   description?: Maybe<Scalars['String']['output']>;
+  ogImage?: Maybe<Scalars['String']['output']>;
+};
+
+export type GlobalAnalytics = {
+  __typename?: 'GlobalAnalytics';
+  googleAnalyticsId?: Maybe<Scalars['String']['output']>;
+};
+
+export type GlobalSecurity = {
+  __typename?: 'GlobalSecurity';
+  turnstileSiteKey?: Maybe<Scalars['String']['output']>;
+};
+
+export type GlobalSocial = {
+  __typename?: 'GlobalSocial';
+  facebook?: Maybe<Scalars['String']['output']>;
+  instagram?: Maybe<Scalars['String']['output']>;
+  linkedin?: Maybe<Scalars['String']['output']>;
 };
 
 export type Global = Node & Document & {
   __typename?: 'Global';
+  branding?: Maybe<GlobalBranding>;
   contact?: Maybe<GlobalContact>;
   product?: Maybe<GlobalProduct>;
   seo?: Maybe<GlobalSeo>;
+  analytics?: Maybe<GlobalAnalytics>;
+  security?: Maybe<GlobalSecurity>;
+  social?: Maybe<GlobalSocial>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
+};
+
+export type GlobalBrandingFilter = {
+  logo?: InputMaybe<ImageFilter>;
+  logoAlt?: InputMaybe<StringFilter>;
+  siteName?: InputMaybe<StringFilter>;
 };
 
 export type GlobalContactFilter = {
@@ -1233,12 +1268,31 @@ export type GlobalProductFilter = {
 export type GlobalSeoFilter = {
   title?: InputMaybe<StringFilter>;
   description?: InputMaybe<StringFilter>;
+  ogImage?: InputMaybe<ImageFilter>;
+};
+
+export type GlobalAnalyticsFilter = {
+  googleAnalyticsId?: InputMaybe<StringFilter>;
+};
+
+export type GlobalSecurityFilter = {
+  turnstileSiteKey?: InputMaybe<StringFilter>;
+};
+
+export type GlobalSocialFilter = {
+  facebook?: InputMaybe<StringFilter>;
+  instagram?: InputMaybe<StringFilter>;
+  linkedin?: InputMaybe<StringFilter>;
 };
 
 export type GlobalFilter = {
+  branding?: InputMaybe<GlobalBrandingFilter>;
   contact?: InputMaybe<GlobalContactFilter>;
   product?: InputMaybe<GlobalProductFilter>;
   seo?: InputMaybe<GlobalSeoFilter>;
+  analytics?: InputMaybe<GlobalAnalyticsFilter>;
+  security?: InputMaybe<GlobalSecurityFilter>;
+  social?: InputMaybe<GlobalSocialFilter>;
 };
 
 export type GlobalConnectionEdges = {
@@ -1873,6 +1927,12 @@ export type ContactMutation = {
   faqs?: InputMaybe<ContactFaqsMutation>;
 };
 
+export type GlobalBrandingMutation = {
+  logo?: InputMaybe<Scalars['String']['input']>;
+  logoAlt?: InputMaybe<Scalars['String']['input']>;
+  siteName?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type GlobalContactMutation = {
   email?: InputMaybe<Scalars['String']['input']>;
   phone?: InputMaybe<Scalars['String']['input']>;
@@ -1888,12 +1948,31 @@ export type GlobalProductMutation = {
 export type GlobalSeoMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
   description?: InputMaybe<Scalars['String']['input']>;
+  ogImage?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type GlobalAnalyticsMutation = {
+  googleAnalyticsId?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type GlobalSecurityMutation = {
+  turnstileSiteKey?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type GlobalSocialMutation = {
+  facebook?: InputMaybe<Scalars['String']['input']>;
+  instagram?: InputMaybe<Scalars['String']['input']>;
+  linkedin?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type GlobalMutation = {
+  branding?: InputMaybe<GlobalBrandingMutation>;
   contact?: InputMaybe<GlobalContactMutation>;
   product?: InputMaybe<GlobalProductMutation>;
   seo?: InputMaybe<GlobalSeoMutation>;
+  analytics?: InputMaybe<GlobalAnalyticsMutation>;
+  security?: InputMaybe<GlobalSecurityMutation>;
+  social?: InputMaybe<GlobalSocialMutation>;
 };
 
 export type TestimonialMutation = {
@@ -1923,7 +2002,7 @@ export type OrderPartsFragment = { __typename: 'Order', seo?: { __typename: 'Ord
 
 export type ContactPartsFragment = { __typename: 'Contact', seo?: { __typename: 'ContactSeo', title?: string | null, description?: string | null } | null, hero?: { __typename: 'ContactHero', headline?: string | null, subheadline?: string | null } | null, contact?: { __typename: 'ContactContact', headline?: string | null, subheadline?: string | null, details?: { __typename: 'ContactContactDetails', email?: string | null, location?: { __typename: 'ContactContactDetailsLocation', city?: string | null, country?: string | null } | null, responseTime?: { __typename: 'ContactContactDetailsResponseTime', typical?: string | null, hours?: string | null } | null } | null, quickLinks?: Array<{ __typename: 'ContactContactQuickLinks', text?: string | null, link?: string | null } | null> | null } | null, form?: { __typename: 'ContactForm', headline?: string | null } | null, faqs?: { __typename: 'ContactFaqs', headline?: string | null, ctaText?: string | null, ctaButtonText?: string | null, ctaEmail?: string | null, items?: Array<{ __typename: 'ContactFaqsItems', question?: string | null, answer?: string | null } | null> | null } | null };
 
-export type GlobalPartsFragment = { __typename: 'Global', contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null } | null };
+export type GlobalPartsFragment = { __typename: 'Global', branding?: { __typename: 'GlobalBranding', logo?: string | null, logoAlt?: string | null, siteName?: string | null } | null, contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null, ogImage?: string | null } | null, analytics?: { __typename: 'GlobalAnalytics', googleAnalyticsId?: string | null } | null, security?: { __typename: 'GlobalSecurity', turnstileSiteKey?: string | null } | null, social?: { __typename: 'GlobalSocial', facebook?: string | null, instagram?: string | null, linkedin?: string | null } | null };
 
 export type TestimonialPartsFragment = { __typename: 'Testimonial', quote: string, author: string, role?: string | null, location?: string | null, avatar?: string | null, featured?: boolean | null, order?: number | null };
 
@@ -2029,7 +2108,7 @@ export type GlobalQueryVariables = Exact<{
 }>;
 
 
-export type GlobalQuery = { __typename?: 'Query', global: { __typename: 'Global', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null } | null } };
+export type GlobalQuery = { __typename?: 'Query', global: { __typename: 'Global', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, branding?: { __typename: 'GlobalBranding', logo?: string | null, logoAlt?: string | null, siteName?: string | null } | null, contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null, ogImage?: string | null } | null, analytics?: { __typename: 'GlobalAnalytics', googleAnalyticsId?: string | null } | null, security?: { __typename: 'GlobalSecurity', turnstileSiteKey?: string | null } | null, social?: { __typename: 'GlobalSocial', facebook?: string | null, instagram?: string | null, linkedin?: string | null } | null } };
 
 export type GlobalConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -2041,7 +2120,7 @@ export type GlobalConnectionQueryVariables = Exact<{
 }>;
 
 
-export type GlobalConnectionQuery = { __typename?: 'Query', globalConnection: { __typename?: 'GlobalConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'GlobalConnectionEdges', cursor: string, node?: { __typename: 'Global', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null } | null } | null } | null> | null } };
+export type GlobalConnectionQuery = { __typename?: 'Query', globalConnection: { __typename?: 'GlobalConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'GlobalConnectionEdges', cursor: string, node?: { __typename: 'Global', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, branding?: { __typename: 'GlobalBranding', logo?: string | null, logoAlt?: string | null, siteName?: string | null } | null, contact?: { __typename: 'GlobalContact', email?: string | null, phone?: string | null, location?: string | null, region?: string | null } | null, product?: { __typename: 'GlobalProduct', price?: number | null, currency?: string | null } | null, seo?: { __typename: 'GlobalSeo', title?: string | null, description?: string | null, ogImage?: string | null } | null, analytics?: { __typename: 'GlobalAnalytics', googleAnalyticsId?: string | null } | null, security?: { __typename: 'GlobalSecurity', turnstileSiteKey?: string | null } | null, social?: { __typename: 'GlobalSocial', facebook?: string | null, instagram?: string | null, linkedin?: string | null } | null } | null } | null> | null } };
 
 export type TestimonialQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -2413,6 +2492,12 @@ export const ContactPartsFragmentDoc = gql`
 export const GlobalPartsFragmentDoc = gql`
     fragment GlobalParts on Global {
   __typename
+  branding {
+    __typename
+    logo
+    logoAlt
+    siteName
+  }
   contact {
     __typename
     email
@@ -2429,6 +2514,21 @@ export const GlobalPartsFragmentDoc = gql`
     __typename
     title
     description
+    ogImage
+  }
+  analytics {
+    __typename
+    googleAnalyticsId
+  }
+  security {
+    __typename
+    turnstileSiteKey
+  }
+  social {
+    __typename
+    facebook
+    instagram
+    linkedin
   }
 }
     `;

@@ -15,6 +15,11 @@ var config_default = defineConfig({
       publicFolder: "public"
     }
   },
+  // Enable visual editing mode
+  cmsCallback: (cms) => {
+    cms.flags.set("branch-switcher", true);
+    return cms;
+  },
   schema: {
     collections: [
       // Home Page
@@ -30,7 +35,8 @@ var config_default = defineConfig({
           allowedActions: {
             create: false,
             delete: false
-          }
+          },
+          router: () => "/"
         },
         fields: [
           {
@@ -175,7 +181,8 @@ var config_default = defineConfig({
           allowedActions: {
             create: false,
             delete: false
-          }
+          },
+          router: () => "/how-it-works"
         },
         fields: [
           {
@@ -286,7 +293,8 @@ var config_default = defineConfig({
           allowedActions: {
             create: false,
             delete: false
-          }
+          },
+          router: () => "/about"
         },
         fields: [
           {
@@ -416,7 +424,8 @@ var config_default = defineConfig({
           allowedActions: {
             create: false,
             delete: false
-          }
+          },
+          router: () => "/order"
         },
         fields: [
           {
@@ -528,7 +537,8 @@ var config_default = defineConfig({
           allowedActions: {
             create: false,
             delete: false
-          }
+          },
+          router: () => "/contact"
         },
         fields: [
           {
@@ -640,6 +650,32 @@ var config_default = defineConfig({
         fields: [
           {
             type: "object",
+            name: "branding",
+            label: "Logo & Branding",
+            description: "Upload your logo and configure site branding",
+            fields: [
+              {
+                type: "image",
+                name: "logo",
+                label: "Logo Image",
+                description: "Upload your logo (recommended: PNG or SVG, max height 50px)"
+              },
+              {
+                type: "string",
+                name: "logoAlt",
+                label: "Logo Alt Text",
+                description: "Accessibility text for the logo (e.g., 'Moonochew Logo')"
+              },
+              {
+                type: "string",
+                name: "siteName",
+                label: "Site Name",
+                description: "Displayed if no logo is uploaded"
+              }
+            ]
+          },
+          {
+            type: "object",
             name: "contact",
             label: "Contact Information",
             fields: [
@@ -664,7 +700,46 @@ var config_default = defineConfig({
             label: "Default SEO",
             fields: [
               { type: "string", name: "title", label: "Site Title" },
-              { type: "string", name: "description", label: "Site Description", ui: { component: "textarea" } }
+              { type: "string", name: "description", label: "Site Description", ui: { component: "textarea" } },
+              { type: "image", name: "ogImage", label: "Social Share Image (1200x630px recommended)" }
+            ]
+          },
+          {
+            type: "object",
+            name: "analytics",
+            label: "Analytics & Tracking",
+            description: "Configure your analytics and tracking services",
+            fields: [
+              {
+                type: "string",
+                name: "googleAnalyticsId",
+                label: "Google Analytics ID",
+                description: "Your Google Analytics 4 Measurement ID (e.g., G-XXXXXXXXXX). Leave empty to disable."
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "security",
+            label: "Form Security (Cloudflare Turnstile)",
+            description: "Spam protection for contact and order forms",
+            fields: [
+              {
+                type: "string",
+                name: "turnstileSiteKey",
+                label: "Turnstile Site Key",
+                description: "Get this from your Cloudflare dashboard. Leave empty to disable spam protection."
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "social",
+            label: "Social Media Links",
+            fields: [
+              { type: "string", name: "facebook", label: "Facebook URL" },
+              { type: "string", name: "instagram", label: "Instagram URL" },
+              { type: "string", name: "linkedin", label: "LinkedIn URL" }
             ]
           }
         ]

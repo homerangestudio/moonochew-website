@@ -940,6 +940,12 @@ type ContactConnection implements Connection {
   edges: [ContactConnectionEdges]
 }
 
+type GlobalBranding {
+  logo: String
+  logoAlt: String
+  siteName: String
+}
+
 type GlobalContact {
   email: String
   phone: String
@@ -955,15 +961,40 @@ type GlobalProduct {
 type GlobalSeo {
   title: String
   description: String
+  ogImage: String
+}
+
+type GlobalAnalytics {
+  googleAnalyticsId: String
+}
+
+type GlobalSecurity {
+  turnstileSiteKey: String
+}
+
+type GlobalSocial {
+  facebook: String
+  instagram: String
+  linkedin: String
 }
 
 type Global implements Node & Document {
+  branding: GlobalBranding
   contact: GlobalContact
   product: GlobalProduct
   seo: GlobalSeo
+  analytics: GlobalAnalytics
+  security: GlobalSecurity
+  social: GlobalSocial
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
+}
+
+input GlobalBrandingFilter {
+  logo: ImageFilter
+  logoAlt: StringFilter
+  siteName: StringFilter
 }
 
 input GlobalContactFilter {
@@ -981,12 +1012,31 @@ input GlobalProductFilter {
 input GlobalSeoFilter {
   title: StringFilter
   description: StringFilter
+  ogImage: ImageFilter
+}
+
+input GlobalAnalyticsFilter {
+  googleAnalyticsId: StringFilter
+}
+
+input GlobalSecurityFilter {
+  turnstileSiteKey: StringFilter
+}
+
+input GlobalSocialFilter {
+  facebook: StringFilter
+  instagram: StringFilter
+  linkedin: StringFilter
 }
 
 input GlobalFilter {
+  branding: GlobalBrandingFilter
   contact: GlobalContactFilter
   product: GlobalProductFilter
   seo: GlobalSeoFilter
+  analytics: GlobalAnalyticsFilter
+  security: GlobalSecurityFilter
+  social: GlobalSocialFilter
 }
 
 type GlobalConnectionEdges {
@@ -1483,6 +1533,12 @@ input ContactMutation {
   faqs: ContactFaqsMutation
 }
 
+input GlobalBrandingMutation {
+  logo: String
+  logoAlt: String
+  siteName: String
+}
+
 input GlobalContactMutation {
   email: String
   phone: String
@@ -1498,12 +1554,31 @@ input GlobalProductMutation {
 input GlobalSeoMutation {
   title: String
   description: String
+  ogImage: String
+}
+
+input GlobalAnalyticsMutation {
+  googleAnalyticsId: String
+}
+
+input GlobalSecurityMutation {
+  turnstileSiteKey: String
+}
+
+input GlobalSocialMutation {
+  facebook: String
+  instagram: String
+  linkedin: String
 }
 
 input GlobalMutation {
+  branding: GlobalBrandingMutation
   contact: GlobalContactMutation
   product: GlobalProductMutation
   seo: GlobalSeoMutation
+  analytics: GlobalAnalyticsMutation
+  security: GlobalSecurityMutation
+  social: GlobalSocialMutation
 }
 
 input TestimonialMutation {

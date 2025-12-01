@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
@@ -12,14 +13,20 @@ const navItems = [
   { href: '/contact', label: 'Contact' },
 ]
 
-export default function Navigation() {
+interface NavigationProps {
+  logo?: string
+  logoAlt?: string
+  siteName?: string
+}
+
+export default function Navigation({ logo, logoAlt = 'Moonochew Logo', siteName = 'Moonochew' }: NavigationProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
+      setScrolled(window.scrollY > 50)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -27,21 +34,42 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-natural-cream/95 backdrop-blur-lg border-b border-living-green/10 shadow-natural'
-          : 'bg-transparent'
+          ? 'bg-natural-cream/95 backdrop-blur-lg border-b border-living-green/10 shadow-natural py-2'
+          : 'bg-natural-cream/80 backdrop-blur-sm py-4'
       }`}
     >
-      <div className="container-width py-4 flex items-center justify-between">
+      <div className="container-width flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-living-green to-forest-canopy flex items-center justify-center shadow-green group-hover:shadow-green-lg transition-shadow">
-            <span className="text-natural-cream font-bold text-lg">M</span>
-          </div>
-          <span className="text-2xl font-sans font-light tracking-wide text-deep-forest">
-            MOONO<span className="text-living-green font-semibold">CHEW</span>
-          </span>
+          {logo ? (
+            <Image
+              src={logo}
+              alt={logoAlt}
+              width={300}
+              height={80}
+              className={`w-auto object-contain transition-all duration-500 ${
+                scrolled ? 'h-10' : 'h-20 md:h-24'
+              }`}
+              priority
+            />
+          ) : (
+            <>
+              <div className={`rounded-full bg-gradient-to-br from-living-green to-forest-canopy flex items-center justify-center shadow-green group-hover:shadow-green-lg transition-all duration-500 ${
+                scrolled ? 'w-10 h-10' : 'w-14 h-14'
+              }`}>
+                <span className={`text-natural-cream font-bold transition-all duration-500 ${
+                  scrolled ? 'text-lg' : 'text-2xl'
+                }`}>M</span>
+              </div>
+              <span className={`font-sans font-light tracking-wide text-deep-forest transition-all duration-500 ${
+                scrolled ? 'text-2xl' : 'text-3xl'
+              }`}>
+                MOONO<span className="text-living-green font-semibold">CHEW</span>
+              </span>
+            </>
+          )}
         </Link>
 
         {/* Desktop Menu */}

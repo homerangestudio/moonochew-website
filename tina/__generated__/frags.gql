@@ -324,6 +324,12 @@ fragment ContactParts on Contact {
 
 fragment GlobalParts on Global {
   __typename
+  branding {
+    __typename
+    logo
+    logoAlt
+    siteName
+  }
   contact {
     __typename
     email
@@ -340,6 +346,21 @@ fragment GlobalParts on Global {
     __typename
     title
     description
+    ogImage
+  }
+  analytics {
+    __typename
+    googleAnalyticsId
+  }
+  security {
+    __typename
+    turnstileSiteKey
+  }
+  social {
+    __typename
+    facebook
+    instagram
+    linkedin
   }
 }
 
