@@ -81,7 +81,14 @@ export default async function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <Footer />
+        <Footer
+          logo={settings?.branding?.logo}
+          logoAlt={settings?.branding?.logoAlt}
+          siteName={settings?.branding?.siteName}
+          tagline={settings?.seo?.description}
+          contact={settings?.contact}
+          social={settings?.social}
+        />
       </body>
     </html>
   )

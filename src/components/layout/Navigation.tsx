@@ -36,8 +36,8 @@ export default function Navigation({ logo, logoAlt = 'Moonochew Logo', siteName 
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-natural-cream/95 backdrop-blur-lg border-b border-living-green/10 shadow-natural py-2'
-          : 'bg-natural-cream/80 backdrop-blur-sm py-2'
+          ? 'bg-natural-cream/95 backdrop-blur-lg border-b border-living-green/10 shadow-natural py-1'
+          : 'bg-natural-cream/80 backdrop-blur-sm py-1'
       }`}
     >
       <div className="container-width flex items-center justify-between">
