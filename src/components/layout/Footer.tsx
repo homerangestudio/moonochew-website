@@ -47,7 +47,7 @@ export default function Footer({
                   alt={logoAlt}
                   width={200}
                   height={60}
-                  className="h-12 w-auto object-contain brightness-0 invert"
+                  className="h-12 w-auto object-contain"
                 />
               ) : (
                 <>
