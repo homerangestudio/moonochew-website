@@ -1,0 +1,16 @@
+{
+  "contact": {
+    "email": "info@moonochew.com",
+    "phone": "",
+    "location": "Northern Rivers",
+    "region": "New South Wales, Australia"
+  },
+  "product": {
+    "price": 250,
+    "currency": "AUD"
+  },
+  "seo": {
+    "title": "Moonochew - Protecting Trees. Regenerating Farms.",
+    "description": "The world's only cattle-resistant, barbed stainless spring steel tree guard. Made in Australia, built to last forever."
+  }
+}

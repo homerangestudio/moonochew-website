@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-spring-meadow text-charcoal antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    @apply font-medium text-deep-forest;
+  }
+
+  ::selection {
+    @apply bg-living-green/30 text-charcoal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-living-green text-natural-cream font-semibold rounded-xl
+           shadow-green hover:bg-living-green-dark hover:shadow-green-lg
+           focus:outline-none focus:ring-2 focus:ring-living-green focus:ring-offset-2 focus:ring-offset-spring-meadow
+           transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-forest-canopy/50 text-forest-canopy font-semibold rounded-xl
+           hover:bg-forest-canopy/10 hover:border-forest-canopy
+           focus:outline-none focus:ring-2 focus:ring-living-green focus:ring-offset-2 focus:ring-offset-spring-meadow
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-natural-cream border border-living-green/20 rounded-2xl p-8
+           hover:border-living-green/40 transition-colors duration-200;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 bg-white border border-new-growth rounded-xl text-charcoal
+           placeholder:text-stone-grey
+           focus:outline-none focus:border-living-green focus:ring-2 focus:ring-living-green/30
+           transition-colors duration-200;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-living-green to-golden-wattle bg-clip-text text-transparent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-spring-meadow;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-grey rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-forest-canopy;
+}
+
+/* Subtle texture overlay */
+.texture-overlay {
+  position: relative;
+}
+
+.texture-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
