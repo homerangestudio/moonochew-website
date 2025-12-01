@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "About Us - Moonochew",
+    "description": "The story of Moonochew: 12 years of development, Australian ingenuity, and a vision for regenerative farming. Meet inventor Andrew Humphreys and discover our mission."
+  },
+  "hero": {
+    "headline": "A Better Way to Farm",
+    "subheadline": "Born from frustration with wasteful tree guards, Moonochew represents 12 years of relentless innovation—and a fundamental rethinking of how we protect trees on working farms.",
+    "image": "/images/photos/moonochew protecting a tree 2.jpg",
+    "imageAlt": "Andrew Humphreys with Moonochew tree guard on farm",
+    "stats": [
+      { "value": "12+", "label": "Years Developing" },
+      { "value": "100%", "label": "Australian Made" },
+      { "value": "∞", "label": "Reusability" }
+    ]
+  },
+  "story": {
+    "headline": "The Story",
+    "quote": {
+      "text": "I was sick of buying plastic tree guards that would crack, degrade, and end up in landfill after a single use. There had to be a better way—something that would last, something that actually made sense for the land and the animals.",
+      "author": "Andrew Humphreys, Founder & Inventor"
+    },
+    "paragraphs": [
+      "Andrew Humphreys didn't set out to revolutionize tree protection. He was simply trying to solve a problem every farmer knows too well: how do you protect young trees from cattle without creating more waste, more expense, and more headaches?",
+      "For over a decade, Andrew experimented, failed, learned, and tried again. He tested different materials, different designs, different approaches. He studied how cattle interact with barriers, how trees grow in protected microclimates, and how traditional guards fail.",
+      "The breakthrough came from aerospace engineering. Type 301 stainless spring steel—the same material used in aircraft landing gear—had the exact properties needed: incredible strength, natural elasticity, and rust resistance that would last generations.",
+      "But the material was only part of the solution. The real innovation was understanding that a tree guard doesn't need to be discarded. With the right design and the right steel, one guard could protect tree after tree, decade after decade."
+    ],
+    "philosophy": "Moonochew isn't just a product. It's a philosophy: build things that last, design with nature in mind, and never settle for waste when permanence is possible."
+  },
+  "values": {
+    "headline": "Mission & Values",
+    "subheadline": "Everything we do is guided by three core principles that shape how we design, manufacture, and support our products.",
+    "items": [
+      {
+        "title": "Regeneration",
+        "description": "We believe farming can heal the land, not harm it. Every Moonochew guard is designed to support regenerative practices—protecting trees that rebuild soil, sequester carbon, and create habitat while maintaining productive grazing systems."
+      },
+      {
+        "title": "Circularity",
+        "description": "Linear consumption is broken. We design for infinite reusability—guards that move from tree to tree for generations, eliminating waste streams entirely. When they finally reach end of life, stainless steel is 100% recyclable into new materials."
+      },
+      {
+        "title": "Partnership",
+        "description": "Farmers aren't customers—they're partners in land regeneration. We listen, learn, and adapt based on real-world feedback. Your success is our success, and we're committed to supporting you long after the sale."
+      }
+    ]
+  },
+  "australianMade": {
+    "headline": "Built Here, For Here",
+    "badge": "100% Australian Made",
+    "image": "/images/photos/moonochew units flat before assembly.jpg",
+    "imageAlt": "Moonochew manufacturing in Australia",
+    "paragraphs": [
+      "Every Moonochew guard is manufactured in Australia, using Australian steel, by Australian workers. This isn't just about patriotism—it's about quality, accountability, and supporting local industry.",
+      "We know Australian conditions because we work in them. We understand the harsh sun, the unpredictable weather, and the unique challenges of farming this land. Our guards are tested in real Australian paddocks, refined based on real Australian feedback.",
+      "When you choose Moonochew, you're supporting Australian innovation, Australian manufacturing, and Australian jobs—while getting a product specifically designed for the conditions you face every day."
+    ],
+    "features": [
+      { "title": "Australian Steel", "description": "Sourced & processed locally" },
+      { "title": "Local Workforce", "description": "Made by skilled Australian workers" },
+      { "title": "Field Tested", "description": "Proven in Australian conditions" },
+      { "title": "Direct Support", "description": "Real people, real answers" }
+    ]
+  },
+  "vision": {
+    "quote": "We envision a future where every farm is a sanctuary—where productivity and regeneration aren't at odds, where cattle and trees coexist, and where the tools we use honor the land instead of exploiting it.",
+    "tagline": "That future starts with a single tree guard. It starts with you."
+  },
+  "cta": {
+    "headline": "Join the Movement",
+    "subheadline": "Be part of a growing community of farmers choosing regeneration over degradation, permanence over waste.",
+    "primaryCtaText": "Order Moonochew",
+    "primaryCtaLink": "/order",
+    "secondaryCtaText": "How It Works",
+    "secondaryCtaLink": "/how-it-works"
+  }
+}

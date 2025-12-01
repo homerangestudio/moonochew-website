@@ -1,0 +1,95 @@
+{
+  "seo": {
+    "title": "How It Works - Moonochew",
+    "description": "Discover the revolutionary system behind Moonochew tree guards. From installation to infinite reusability, learn how our cattle-resistant design protects trees while regenerating farms."
+  },
+  "hero": {
+    "headline": "How Moonochew Works",
+    "subheadline": "A revolutionary system that transforms how we protect trees on working farms. Simple to install, impossible to destroy, designed to work with nature—not against it."
+  },
+  "installation": {
+    "headline": "Installation in Three Simple Steps",
+    "subheadline": "From delivery to protection in under 10 minutes. No tools required.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Choose Your Location",
+        "description": "Select where you want your tree to grow. Moonochew works on any terrain, in any paddock, protecting saplings where they're needed most.",
+        "image": "/images/photos/Moonochew tree guards along a driveway.jpg",
+        "imageAlt": "Choosing tree location in paddock"
+      },
+      {
+        "number": "2",
+        "title": "Plant & Protect",
+        "description": "Plant your sapling, then wrap the Moonochew guard around it. The spring steel naturally holds its shape—no stakes, no ties, no fuss.",
+        "image": "/images/photos/moonochew units flat before assembly.jpg",
+        "imageAlt": "Installing Moonochew tree guard"
+      },
+      {
+        "number": "3",
+        "title": "Let Cattle Do the Work",
+        "description": "Your cattle become tree protectors. They graze around the guard, naturally enriching the soil while the barbed steel keeps them from damaging the sapling.",
+        "image": "/images/photos/cattle under a mature shade tree showing that cattle like trees.jpg",
+        "imageAlt": "Cattle grazing around protected tree"
+      }
+    ]
+  },
+  "features": {
+    "headline": "Engineering Meets Nature",
+    "subheadline": "Every detail of Moonochew is designed for durability, sustainability, and harmony with the land.",
+    "items": [
+      {
+        "title": "Stainless Spring Steel",
+        "description": "Type 301 stainless spring steel—the same material used in aircraft landing gear. This isn't ordinary steel.",
+        "image": "/images/photos/close up of moonochew.jpg",
+        "imageAlt": "Stainless spring steel detail",
+        "points": [
+          "Withstands extreme force without permanent deformation",
+          "Naturally rust-resistant for decades of use",
+          "Memory properties return it to original shape",
+          "Strategic barbing deters without harming"
+        ]
+      },
+      {
+        "title": "Habitat Integration",
+        "description": "Unlike plastic guards that trap and kill wildlife, Moonochew becomes part of the ecosystem.",
+        "image": "/images/photos/moonochew protecting a tree 3.jpg",
+        "imageAlt": "Wildlife around Moonochew guard",
+        "points": [
+          "Open structure allows airflow and light penetration",
+          "Small animals and insects move freely through",
+          "No microplastic pollution in soil or waterways",
+          "Supports biodiversity while protecting trees"
+        ]
+      },
+      {
+        "title": "Infinite Reusability",
+        "description": "When your tree outgrows the guard (typically 5-7 years), simply unwrap and move it to a new sapling.",
+        "image": "/images/photos/25 moonochew units in the bottom of a trailer.jpg",
+        "imageAlt": "Moonochew guard being reused",
+        "points": [
+          "Designed for multi-generational use",
+          "No degradation, no disposal, no replacement costs",
+          "100% recyclable at eventual end of life",
+          "One guard can protect dozens of trees over time"
+        ]
+      }
+    ]
+  },
+  "synergy": {
+    "headline": "The Synergy System",
+    "subheadline": "Moonochew doesn't just protect trees—it creates a regenerative cycle where every element supports the others.",
+    "quote": {
+      "text": "The genius of Moonochew isn't just the steel—it's how it transforms a single act of tree planting into a cascading system of regeneration. Protect one tree, and you've created habitat. Protect a hundred, and you've changed the farm forever.",
+      "author": "Andrew Humphreys, Inventor"
+    }
+  },
+  "cta": {
+    "headline": "Ready to Get Started?",
+    "subheadline": "Join the farmers who are protecting trees, regenerating land, and building a sustainable future.",
+    "primaryCtaText": "Order Moonochew",
+    "primaryCtaLink": "/order",
+    "secondaryCtaText": "Our Story",
+    "secondaryCtaLink": "/about"
+  }
+}

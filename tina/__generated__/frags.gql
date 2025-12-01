@@ -1,0 +1,363 @@
+fragment HomeParts on Home {
+  __typename
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    badge
+    headline
+    headlineHighlight
+    subheadline
+    image
+    imageAlt
+    primaryCtaText
+    primaryCtaLink
+    secondaryCtaText
+    secondaryCtaLink
+    stats {
+      __typename
+      value
+      label
+    }
+  }
+  problem {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+    cards {
+      __typename
+      icon
+      title
+      description
+    }
+  }
+  solution {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+    image
+    imageAlt
+    features {
+      __typename
+      title
+      description
+    }
+    ctaText
+    ctaLink
+  }
+  benefits {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+    stats {
+      __typename
+      value
+      label
+      description
+    }
+  }
+  testimonial {
+    __typename
+    quote
+    author
+    role
+  }
+  cta {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+    primaryCtaText
+    primaryCtaLink
+    secondaryCtaText
+    secondaryCtaLink
+    tagline
+  }
+}
+
+fragment HowItWorksParts on HowItWorks {
+  __typename
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    headline
+    subheadline
+  }
+  installation {
+    __typename
+    headline
+    subheadline
+    steps {
+      __typename
+      number
+      title
+      description
+      image
+      imageAlt
+    }
+  }
+  features {
+    __typename
+    headline
+    subheadline
+    items {
+      __typename
+      title
+      description
+      image
+      imageAlt
+      points
+    }
+  }
+  synergy {
+    __typename
+    headline
+    subheadline
+    quote {
+      __typename
+      text
+      author
+    }
+  }
+  cta {
+    __typename
+    headline
+    subheadline
+    primaryCtaText
+    primaryCtaLink
+    secondaryCtaText
+    secondaryCtaLink
+  }
+}
+
+fragment AboutParts on About {
+  __typename
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    headline
+    subheadline
+    image
+    imageAlt
+    stats {
+      __typename
+      value
+      label
+    }
+  }
+  story {
+    __typename
+    headline
+    quote {
+      __typename
+      text
+      author
+    }
+    paragraphs
+    philosophy
+  }
+  values {
+    __typename
+    headline
+    subheadline
+    items {
+      __typename
+      title
+      description
+    }
+  }
+  australianMade {
+    __typename
+    headline
+    badge
+    image
+    imageAlt
+    paragraphs
+    features {
+      __typename
+      title
+      description
+    }
+  }
+  vision {
+    __typename
+    quote
+    tagline
+  }
+  cta {
+    __typename
+    headline
+    subheadline
+    primaryCtaText
+    primaryCtaLink
+    secondaryCtaText
+    secondaryCtaLink
+  }
+}
+
+fragment OrderParts on Order {
+  __typename
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+  }
+  product {
+    __typename
+    name
+    tagline
+    price
+    currency
+    priceNote
+    mainImage
+    mainImageAlt
+    galleryImages {
+      __typename
+      image
+      alt
+    }
+    included
+    specifications {
+      __typename
+      label
+      value
+    }
+  }
+  orderForm {
+    __typename
+    headline
+    subheadline
+  }
+  bulkOrders {
+    __typename
+    headline
+    headlineHighlight
+    subheadline
+    ctaText
+    ctaLink
+  }
+  benefits {
+    __typename
+    headline
+    headlineHighlight
+    items {
+      __typename
+      title
+      description
+    }
+  }
+}
+
+fragment ContactParts on Contact {
+  __typename
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    headline
+    subheadline
+  }
+  contact {
+    __typename
+    headline
+    subheadline
+    details {
+      __typename
+      location {
+        __typename
+        city
+        country
+      }
+      email
+      responseTime {
+        __typename
+        typical
+        hours
+      }
+    }
+    quickLinks {
+      __typename
+      text
+      link
+    }
+  }
+  form {
+    __typename
+    headline
+  }
+  faqs {
+    __typename
+    headline
+    items {
+      __typename
+      question
+      answer
+    }
+    ctaText
+    ctaButtonText
+    ctaEmail
+  }
+}
+
+fragment GlobalParts on Global {
+  __typename
+  contact {
+    __typename
+    email
+    phone
+    location
+    region
+  }
+  product {
+    __typename
+    price
+    currency
+  }
+  seo {
+    __typename
+    title
+    description
+  }
+}
+
+fragment TestimonialParts on Testimonial {
+  __typename
+  quote
+  author
+  role
+  location
+  avatar
+  featured
+  order
+}
+
+fragment FaqParts on Faq {
+  __typename
+  question
+  answer
+  category
+  order
+}

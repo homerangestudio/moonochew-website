@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Order Moonochew - Cattle-Resistant Tree Guards",
+    "description": "Order your Moonochew tree guards. $250 AUD per unit. Australian made, infinitely reusable, cattle-proof protection for your trees."
+  },
+  "hero": {
+    "headline": "Order",
+    "headlineHighlight": "Moonochew",
+    "subheadline": "Generations of fresh food. Priceless protection. One investment."
+  },
+  "product": {
+    "name": "Moonochew Sapling Protector",
+    "tagline": "World's only cattle-resistant, barbed stainless spring steel tree guard",
+    "price": 250,
+    "currency": "AUD",
+    "priceNote": "+ shipping",
+    "mainImage": "/images/photos/close up of moonochew.jpg",
+    "mainImageAlt": "Moonochew tree guard - barbed stainless spring steel construction",
+    "galleryImages": [
+      {
+        "image": "/images/photos/moonochew protecting a tree.jpg",
+        "alt": "Moonochew installed protecting a young tree"
+      },
+      {
+        "image": "/images/photos/moonochew units flat before assembly.jpg",
+        "alt": "Moonochew units flat before assembly"
+      },
+      {
+        "image": "/images/photos/moonochew protecting a tree 4.jpg",
+        "alt": "Moonochew protecting tree in paddock"
+      }
+    ],
+    "included": [
+      "One Moonochew tree guard (pre-folded)",
+      "Ground pegs for anchoring",
+      "Installation guide",
+      "Lifetime repair support"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "Stainless Spring Steel" },
+      { "label": "Setup Time", "value": "10 minutes" },
+      { "label": "Tools Required", "value": "None" },
+      { "label": "Reusability", "value": "Unlimited" },
+      { "label": "Weather Resistance", "value": "All conditions" },
+      { "label": "Origin", "value": "Australian Made" }
+    ]
+  },
+  "orderForm": {
+    "headline": "Place Your Order",
+    "subheadline": "Fill out the form below and we'll contact you to confirm your order and arrange shipping."
+  },
+  "bulkOrders": {
+    "headline": "Planning a",
+    "headlineHighlight": "Large Project",
+    "subheadline": "For bulk orders, rental arrangements, or fee-for-service models, get in touch. Moonochew's durability makes it ideal for sharing economy models and large-scale regeneration projects.",
+    "ctaText": "Discuss Bulk Pricing",
+    "ctaLink": "/contact"
+  },
+  "benefits": {
+    "headline": "Why Choose",
+    "headlineHighlight": "Moonochew",
+    "items": [
+      {
+        "title": "Cattle-Proof",
+        "description": "The only tree guard livestock consistently leave well alone. 12+ years of testing with various breeds."
+      },
+      {
+        "title": "Infinitely Reusable",
+        "description": "Stainless spring steel lasts for generations. Protect hundreds of trees with a single guard."
+      },
+      {
+        "title": "10-Minute Setup",
+        "description": "No tools required. Pre-folded design simply wraps around tree and pegs into ground."
+      }
+    ]
+  }
+}

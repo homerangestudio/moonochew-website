@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "Contact Us - Moonochew",
+    "description": "Get in touch with the Moonochew team. Questions about tree guards, bulk orders, or regenerative farming? We're here to help."
+  },
+  "hero": {
+    "headline": "Get In Touch",
+    "subheadline": "Have a question or want to learn more? We'd love to hear from you."
+  },
+  "contact": {
+    "headline": "Let's Connect",
+    "subheadline": "Whether you have questions about our products, need help with an order, or want to discuss a partnership opportunity, we're here to help.",
+    "details": {
+      "location": {
+        "city": "Melbourne, Victoria",
+        "country": "Australia"
+      },
+      "email": "hello@moonochew.com.au",
+      "responseTime": {
+        "typical": "We typically respond within 24 hours",
+        "hours": "Monday - Friday, 9am - 5pm AEST"
+      }
+    },
+    "quickLinks": [
+      { "text": "Order Moonochew", "link": "/order" },
+      { "text": "About Us", "link": "/about" },
+      { "text": "How It Works", "link": "/how-it-works" }
+    ]
+  },
+  "form": {
+    "headline": "Send Us a Message"
+  },
+  "faqs": {
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is Moonochew made from?",
+        "answer": "Moonochew tree guards are made from Type 301 stainless spring steel—the same material used in aircraft landing gear. This provides incredible strength, natural rust resistance, and the elasticity to return to its original shape after impact. The strategic barbing deters cattle without harming them."
+      },
+      {
+        "question": "How long does shipping take?",
+        "answer": "We ship Australia-wide with delivery typically taking 5-7 business days. Guards are shipped pre-folded for easy handling. You'll receive tracking information once your order is dispatched. For urgent orders or bulk shipments, please contact us directly."
+      },
+      {
+        "question": "Does Moonochew work with all cattle breeds?",
+        "answer": "Yes! Moonochew has been tested for over 12 years with various cattle breeds including Angus, Hereford, dairy breeds, and even curious bulls. The barbed stainless steel design consistently deters cattle from rubbing or browsing on protected trees, regardless of breed or temperament."
+      },
+      {
+        "question": "Do you offer bulk or wholesale pricing?",
+        "answer": "Absolutely! We work with landcare groups, councils, large-scale regeneration projects, and farms needing multiple guards. We also offer rental and fee-for-service models given Moonochew's infinite reusability. Please use the contact form above or email us directly to discuss your requirements."
+      }
+    ],
+    "ctaText": "Still have questions?",
+    "ctaButtonText": "Email Us Directly",
+    "ctaEmail": "mailto:hello@moonochew.com.au"
+  }
+}

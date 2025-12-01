@@ -17,6 +17,614 @@ var config_default = defineConfig({
   },
   schema: {
     collections: [
+      // Home Page
+      {
+        name: "home",
+        label: "Home Page",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "home"
+        },
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
+        fields: [
+          {
+            type: "object",
+            name: "seo",
+            label: "SEO Settings",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              { type: "string", name: "badge", label: "Badge Text" },
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight (colored)" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "image", name: "image", label: "Hero Image" },
+              { type: "string", name: "imageAlt", label: "Image Alt Text" },
+              { type: "string", name: "primaryCtaText", label: "Primary Button Text" },
+              { type: "string", name: "primaryCtaLink", label: "Primary Button Link" },
+              { type: "string", name: "secondaryCtaText", label: "Secondary Button Text" },
+              { type: "string", name: "secondaryCtaLink", label: "Secondary Button Link" },
+              {
+                type: "object",
+                name: "stats",
+                label: "Stats",
+                list: true,
+                fields: [
+                  { type: "string", name: "value", label: "Value" },
+                  { type: "string", name: "label", label: "Label" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "problem",
+            label: "Problem Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "cards",
+                label: "Problem Cards",
+                list: true,
+                fields: [
+                  { type: "string", name: "icon", label: "Icon (fire, map, money)" },
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "solution",
+            label: "Solution Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "image", name: "image", label: "Image" },
+              { type: "string", name: "imageAlt", label: "Image Alt Text" },
+              {
+                type: "object",
+                name: "features",
+                label: "Features",
+                list: true,
+                fields: [
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+                ]
+              },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaLink", label: "CTA Button Link" }
+            ]
+          },
+          {
+            type: "object",
+            name: "benefits",
+            label: "Benefits Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "stats",
+                label: "Stats",
+                list: true,
+                fields: [
+                  { type: "string", name: "value", label: "Value" },
+                  { type: "string", name: "label", label: "Label" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "testimonial",
+            label: "Testimonial Section",
+            fields: [
+              { type: "string", name: "quote", label: "Quote", ui: { component: "textarea" } },
+              { type: "string", name: "author", label: "Author Name" },
+              { type: "string", name: "role", label: "Author Role" }
+            ]
+          },
+          {
+            type: "object",
+            name: "cta",
+            label: "CTA Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "string", name: "primaryCtaText", label: "Primary Button Text" },
+              { type: "string", name: "primaryCtaLink", label: "Primary Button Link" },
+              { type: "string", name: "secondaryCtaText", label: "Secondary Button Text" },
+              { type: "string", name: "secondaryCtaLink", label: "Secondary Button Link" },
+              { type: "string", name: "tagline", label: "Tagline" }
+            ]
+          }
+        ]
+      },
+      // How It Works Page
+      {
+        name: "howItWorks",
+        label: "How It Works Page",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "how-it-works"
+        },
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
+        fields: [
+          {
+            type: "object",
+            name: "seo",
+            label: "SEO Settings",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "installation",
+            label: "Installation Steps",
+            fields: [
+              { type: "string", name: "headline", label: "Section Headline" },
+              { type: "string", name: "subheadline", label: "Section Subheadline" },
+              {
+                type: "object",
+                name: "steps",
+                label: "Steps",
+                list: true,
+                fields: [
+                  { type: "string", name: "number", label: "Step Number" },
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "imageAlt", label: "Image Alt Text" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "features",
+            label: "Features Section",
+            fields: [
+              { type: "string", name: "headline", label: "Section Headline" },
+              { type: "string", name: "subheadline", label: "Section Subheadline" },
+              {
+                type: "object",
+                name: "items",
+                label: "Feature Items",
+                list: true,
+                fields: [
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "imageAlt", label: "Image Alt Text" },
+                  { type: "string", name: "points", label: "Bullet Points", list: true }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "synergy",
+            label: "Synergy Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "quote",
+                label: "Quote",
+                fields: [
+                  { type: "string", name: "text", label: "Quote Text", ui: { component: "textarea" } },
+                  { type: "string", name: "author", label: "Author" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "cta",
+            label: "CTA Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "string", name: "primaryCtaText", label: "Primary Button Text" },
+              { type: "string", name: "primaryCtaLink", label: "Primary Button Link" },
+              { type: "string", name: "secondaryCtaText", label: "Secondary Button Text" },
+              { type: "string", name: "secondaryCtaLink", label: "Secondary Button Link" }
+            ]
+          }
+        ]
+      },
+      // About Page
+      {
+        name: "about",
+        label: "About Page",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "about"
+        },
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
+        fields: [
+          {
+            type: "object",
+            name: "seo",
+            label: "SEO Settings",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "image", name: "image", label: "Image" },
+              { type: "string", name: "imageAlt", label: "Image Alt Text" },
+              {
+                type: "object",
+                name: "stats",
+                label: "Stats",
+                list: true,
+                fields: [
+                  { type: "string", name: "value", label: "Value" },
+                  { type: "string", name: "label", label: "Label" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "story",
+            label: "Story Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              {
+                type: "object",
+                name: "quote",
+                label: "Founder Quote",
+                fields: [
+                  { type: "string", name: "text", label: "Quote Text", ui: { component: "textarea" } },
+                  { type: "string", name: "author", label: "Author" }
+                ]
+              },
+              { type: "string", name: "paragraphs", label: "Story Paragraphs", list: true, ui: { component: "textarea" } },
+              { type: "string", name: "philosophy", label: "Philosophy Statement", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "values",
+            label: "Values Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "items",
+                label: "Values",
+                list: true,
+                fields: [
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "australianMade",
+            label: "Australian Made Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "badge", label: "Badge Text" },
+              { type: "image", name: "image", label: "Image" },
+              { type: "string", name: "imageAlt", label: "Image Alt Text" },
+              { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "features",
+                label: "Features",
+                list: true,
+                fields: [
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "vision",
+            label: "Vision Section",
+            fields: [
+              { type: "string", name: "quote", label: "Vision Quote", ui: { component: "textarea" } },
+              { type: "string", name: "tagline", label: "Tagline" }
+            ]
+          },
+          {
+            type: "object",
+            name: "cta",
+            label: "CTA Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "string", name: "primaryCtaText", label: "Primary Button Text" },
+              { type: "string", name: "primaryCtaLink", label: "Primary Button Link" },
+              { type: "string", name: "secondaryCtaText", label: "Secondary Button Text" },
+              { type: "string", name: "secondaryCtaLink", label: "Secondary Button Link" }
+            ]
+          }
+        ]
+      },
+      // Order Page
+      {
+        name: "order",
+        label: "Order Page",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "order"
+        },
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
+        fields: [
+          {
+            type: "object",
+            name: "seo",
+            label: "SEO Settings",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline" }
+            ]
+          },
+          {
+            type: "object",
+            name: "product",
+            label: "Product Details",
+            fields: [
+              { type: "string", name: "name", label: "Product Name" },
+              { type: "string", name: "tagline", label: "Tagline" },
+              { type: "number", name: "price", label: "Price (AUD)" },
+              { type: "string", name: "currency", label: "Currency" },
+              { type: "string", name: "priceNote", label: "Price Note (e.g. + shipping)" },
+              { type: "image", name: "mainImage", label: "Main Product Image" },
+              { type: "string", name: "mainImageAlt", label: "Main Image Alt Text" },
+              {
+                type: "object",
+                name: "galleryImages",
+                label: "Gallery Images",
+                list: true,
+                fields: [
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "alt", label: "Alt Text" }
+                ]
+              },
+              { type: "string", name: "included", label: "What's Included", list: true },
+              {
+                type: "object",
+                name: "specifications",
+                label: "Specifications",
+                list: true,
+                fields: [
+                  { type: "string", name: "label", label: "Label" },
+                  { type: "string", name: "value", label: "Value" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "orderForm",
+            label: "Order Form Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline" }
+            ]
+          },
+          {
+            type: "object",
+            name: "bulkOrders",
+            label: "Bulk Orders Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaLink", label: "CTA Button Link" }
+            ]
+          },
+          {
+            type: "object",
+            name: "benefits",
+            label: "Benefits Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "headlineHighlight", label: "Headline Highlight" },
+              {
+                type: "object",
+                name: "items",
+                label: "Benefit Items",
+                list: true,
+                fields: [
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      // Contact Page
+      {
+        name: "contact",
+        label: "Contact Page",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "contact"
+        },
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
+        fields: [
+          {
+            type: "object",
+            name: "seo",
+            label: "SEO Settings",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } }
+            ]
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline" }
+            ]
+          },
+          {
+            type: "object",
+            name: "contact",
+            label: "Contact Information",
+            fields: [
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "details",
+                label: "Contact Details",
+                fields: [
+                  {
+                    type: "object",
+                    name: "location",
+                    label: "Location",
+                    fields: [
+                      { type: "string", name: "city", label: "City" },
+                      { type: "string", name: "country", label: "Country" }
+                    ]
+                  },
+                  { type: "string", name: "email", label: "Email Address" },
+                  {
+                    type: "object",
+                    name: "responseTime",
+                    label: "Response Time",
+                    fields: [
+                      { type: "string", name: "typical", label: "Typical Response" },
+                      { type: "string", name: "hours", label: "Business Hours" }
+                    ]
+                  }
+                ]
+              },
+              {
+                type: "object",
+                name: "quickLinks",
+                label: "Quick Links",
+                list: true,
+                fields: [
+                  { type: "string", name: "text", label: "Link Text" },
+                  { type: "string", name: "link", label: "Link URL" }
+                ]
+              }
+            ]
+          },
+          {
+            type: "object",
+            name: "form",
+            label: "Contact Form",
+            fields: [
+              { type: "string", name: "headline", label: "Form Headline" }
+            ]
+          },
+          {
+            type: "object",
+            name: "faqs",
+            label: "FAQs Section",
+            fields: [
+              { type: "string", name: "headline", label: "Section Headline" },
+              {
+                type: "object",
+                name: "items",
+                label: "FAQ Items",
+                list: true,
+                fields: [
+                  { type: "string", name: "question", label: "Question" },
+                  { type: "string", name: "answer", label: "Answer", ui: { component: "textarea" } }
+                ]
+              },
+              { type: "string", name: "ctaText", label: "CTA Text" },
+              { type: "string", name: "ctaButtonText", label: "CTA Button Text" },
+              { type: "string", name: "ctaEmail", label: "CTA Email Link" }
+            ]
+          }
+        ]
+      },
       // Global Settings
       {
         name: "global",
@@ -58,56 +666,6 @@ var config_default = defineConfig({
               { type: "string", name: "title", label: "Site Title" },
               { type: "string", name: "description", label: "Site Description", ui: { component: "textarea" } }
             ]
-          }
-        ]
-      },
-      // Pages Collection
-      {
-        name: "page",
-        label: "Pages",
-        path: "content/pages",
-        format: "mdx",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Page Title",
-            required: true,
-            isTitle: true
-          },
-          {
-            type: "string",
-            name: "seoTitle",
-            label: "SEO Title"
-          },
-          {
-            type: "string",
-            name: "seoDescription",
-            label: "SEO Description",
-            ui: { component: "textarea" }
-          },
-          {
-            type: "object",
-            name: "hero",
-            label: "Hero Section",
-            fields: [
-              { type: "string", name: "badge", label: "Badge Text" },
-              { type: "string", name: "headline", label: "Main Headline" },
-              { type: "string", name: "highlightedText", label: "Highlighted Text" },
-              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
-              { type: "image", name: "image", label: "Hero Image" },
-              { type: "string", name: "imageAlt", label: "Image Alt Text" },
-              { type: "string", name: "primaryCta", label: "Primary CTA Text" },
-              { type: "string", name: "primaryCtaLink", label: "Primary CTA Link" },
-              { type: "string", name: "secondaryCta", label: "Secondary CTA Text" },
-              { type: "string", name: "secondaryCtaLink", label: "Secondary CTA Link" }
-            ]
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Page Content",
-            isBody: true
           }
         ]
       },

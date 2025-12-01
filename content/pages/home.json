@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "Moonochew - Cattle-Resistant Tree Guards for Regenerative Farming",
+    "description": "The world's only cattle-resistant tree guard. Made from barbed stainless spring steel, designed to last forever. Australian made."
+  },
+  "hero": {
+    "badge": "Australian Innovation",
+    "headline": "Protecting Trees.",
+    "headlineHighlight": "Regenerating Farms.",
+    "subheadline": "The world's only cattle-resistant tree guard. Made from barbed stainless spring steel, designed to last forever.",
+    "image": "/images/photos/moonochew protecting a tree.jpg",
+    "imageAlt": "Moonochew tree guard protecting a young tree on Australian farmland",
+    "primaryCtaText": "Order Now — $250",
+    "primaryCtaLink": "/order",
+    "secondaryCtaText": "Learn How It Works",
+    "secondaryCtaLink": "/how-it-works",
+    "stats": [
+      { "value": "12+", "label": "Years Tested" },
+      { "value": "∞", "label": "Reusable" },
+      { "value": "10", "label": "Min Setup" }
+    ]
+  },
+  "problem": {
+    "headline": "The Problem with",
+    "headlineHighlight": "Segregated Agriculture",
+    "subheadline": "Traditional farming methods create unnecessary barriers between livestock and environmental regeneration.",
+    "cards": [
+      {
+        "icon": "fire",
+        "title": "Fire & Competition",
+        "description": "Pasture grasses compete with young trees for water and nutrients, while increasing fire risk around vulnerable saplings."
+      },
+      {
+        "icon": "map",
+        "title": "Lost Land",
+        "description": "Farmers must fence off entire areas for tree establishment, removing productive land from grazing rotation for years."
+      },
+      {
+        "icon": "money",
+        "title": "Expensive Guesswork",
+        "description": "Traditional tree guards are fragile, disposable, and often fail—wasting money and trees without guaranteed protection."
+      }
+    ]
+  },
+  "solution": {
+    "headline": "The",
+    "headlineHighlight": "Moonochew Solution",
+    "subheadline": "A revolutionary approach to tree protection that allows cattle and trees to coexist from day one.",
+    "image": "/images/photos/close up of moonochew.jpg",
+    "imageAlt": "Close-up of Moonochew barbed stainless spring steel tree guard",
+    "features": [
+      {
+        "title": "Cattle-Resistant Design",
+        "description": "Barbed stainless spring steel deters rubbing and browsing without harming animals."
+      },
+      {
+        "title": "No Fencing Required",
+        "description": "Plant trees anywhere in your paddock without removing land from production."
+      },
+      {
+        "title": "Built to Last Forever",
+        "description": "Infinitely reusable stainless steel construction means one-time investment for generations of trees."
+      },
+      {
+        "title": "10-Minute Installation",
+        "description": "Simple setup with no tools required. Just press into ground around your sapling."
+      },
+      {
+        "title": "Australian Made",
+        "description": "Designed, tested, and manufactured in Australia for Australian conditions."
+      }
+    ],
+    "ctaText": "See How It Works",
+    "ctaLink": "/how-it-works"
+  },
+  "benefits": {
+    "headline": "Transform Your",
+    "headlineHighlight": "Farm",
+    "subheadline": "Join Australian farmers who are seeing real results from integrating trees into their grazing systems.",
+    "stats": [
+      {
+        "value": "2x",
+        "label": "Productivity",
+        "description": "Silvopasture systems can double land productivity by combining timber, livestock, and biodiversity."
+      },
+      {
+        "value": "50%",
+        "label": "Water Reduction",
+        "description": "Tree shade reduces pasture evaporation, cutting water needs in half while improving soil moisture."
+      },
+      {
+        "value": "30%",
+        "label": "More Milk",
+        "description": "Shaded dairy cows produce up to 30% more milk thanks to reduced heat stress and improved comfort."
+      },
+      {
+        "value": "100+",
+        "label": "Years Life",
+        "description": "Native trees become legacy assets, providing shade, timber, and habitat for multiple generations."
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "We've been using Moonochew guards for over a decade. They've transformed how we approach regenerative farming. We can now plant trees throughout our paddocks without losing grazing land. The guards have proven themselves through droughts, floods, and everything in between—and they still look brand new.",
+    "author": "David Scarabelotti",
+    "role": "Regenerative Farmer, Victoria"
+  },
+  "cta": {
+    "headline": "Ready to",
+    "headlineHighlight": "Regenerate?",
+    "subheadline": "Start protecting trees and building resilience on your farm today. Each Moonochew guard is an investment in your land's future.",
+    "primaryCtaText": "Order Moonochew Guards — $250",
+    "primaryCtaLink": "/order",
+    "secondaryCtaText": "Get in Touch",
+    "secondaryCtaLink": "/contact",
+    "tagline": "Australian made • Lifetime durability • 12+ years proven in the field"
+  }
+}
