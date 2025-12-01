@@ -10,14 +10,23 @@
     "subheadline": "The world's only cattle-resistant tree guard. Made from barbed stainless spring steel, designed to last forever.",
     "image": "/images/photos/moonochew-protecting-a-tree.jpg",
     "imageAlt": "Moonochew tree guard protecting a young tree on Australian farmland",
-    "primaryCtaText": "Order Now — $250",
+    "primaryCtaText": "Order Now ",
     "primaryCtaLink": "/order",
     "secondaryCtaText": "Learn How It Works",
     "secondaryCtaLink": "/how-it-works",
     "stats": [
-      { "value": "12+", "label": "Years Tested" },
-      { "value": "∞", "label": "Reusable" },
-      { "value": "10", "label": "Min Setup" }
+      {
+        "value": "12+",
+        "label": "Years Tested"
+      },
+      {
+        "value": "∞",
+        "label": "Reusable"
+      },
+      {
+        "value": "10",
+        "label": "Min Setup"
+      }
     ]
   },
   "problem": {
