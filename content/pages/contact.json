@@ -12,7 +12,7 @@
     "subheadline": "Whether you have questions about our products, need help with an order, or want to discuss a partnership opportunity, we're here to help.",
     "details": {
       "location": {
-        "city": "Melbourne, Victoria",
+        "city": "Coraki, NSW",
         "country": "Australia"
       },
       "email": "hello@moonochew.com.au",
@@ -22,9 +22,18 @@
       }
     },
     "quickLinks": [
-      { "text": "Order Moonochew", "link": "/order" },
-      { "text": "About Us", "link": "/about" },
-      { "text": "How It Works", "link": "/how-it-works" }
+      {
+        "text": "Order Moonochew",
+        "link": "/order"
+      },
+      {
+        "text": "About Us",
+        "link": "/about"
+      },
+      {
+        "text": "How It Works",
+        "link": "/how-it-works"
+      }
     ]
   },
   "form": {
