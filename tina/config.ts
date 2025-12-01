@@ -22,19 +22,6 @@ export default defineConfig({
       publicFolder: "public",
     },
   },
-  // Preview URL for visual editing
-  ui: {
-    previewUrl: () => {
-      // Use the deployed URL for visual editing
-      return { url: "https://moonochew-website.pages.dev" };
-    },
-  },
-  // Enable visual editing mode
-  cmsCallback: (cms) => {
-    // Enable visual editing
-    cms.flags.set("branch-switcher", true);
-    return cms;
-  },
   schema: {
     collections: [
       // Home Page
