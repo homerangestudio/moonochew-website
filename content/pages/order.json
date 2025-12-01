@@ -14,19 +14,19 @@
     "price": 250,
     "currency": "AUD",
     "priceNote": "+ shipping",
-    "mainImage": "/images/photos/close up of moonochew.jpg",
+    "mainImage": "/images/photos/close-up-of-moonochew.jpg",
     "mainImageAlt": "Moonochew tree guard - barbed stainless spring steel construction",
     "galleryImages": [
       {
-        "image": "/images/photos/moonochew protecting a tree.jpg",
+        "image": "/images/photos/moonochew-protecting-a-tree.jpg",
         "alt": "Moonochew installed protecting a young tree"
       },
       {
-        "image": "/images/photos/moonochew units flat before assembly.jpg",
+        "image": "/images/photos/moonochew-units-flat-before-assembly.jpg",
         "alt": "Moonochew units flat before assembly"
       },
       {
-        "image": "/images/photos/moonochew protecting a tree 4.jpg",
+        "image": "/images/photos/moonochew-protecting-a-tree-4.jpg",
         "alt": "Moonochew protecting tree in paddock"
       }
     ],
