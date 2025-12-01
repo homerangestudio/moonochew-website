@@ -8,7 +8,8 @@ const branch =
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
+  // Support both TINA_PUBLIC_CLIENT_ID (used by CLI) and NEXT_PUBLIC_TINA_CLIENT_ID (legacy)
+  clientId: process.env.TINA_PUBLIC_CLIENT_ID || process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
   token: process.env.TINA_TOKEN || "",
 
   build: {
