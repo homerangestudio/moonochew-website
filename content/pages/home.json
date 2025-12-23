@@ -7,7 +7,9 @@
     "badge": "Australian Innovation",
     "headline": "Protecting Trees.",
     "headlineHighlight": "Regenerating Farms.",
-    "subheadline": "The world's only cattle-resistant tree guard. Made from barbed stainless spring steel, designed to last forever.",
+    "headlineAccent": "Growing Food.",
+    "headlineAccentColor": "#6B2D5B",
+    "subheadline": "The world's only cattle-resistant, barbed stainless spring steel tree guard. Made in Australia, built to last forever.",
     "image": "/images/photos/moonochew-protecting-a-tree.jpg",
     "imageAlt": "Moonochew tree guard protecting a young tree on Australian farmland",
     "primaryCtaText": "Order Now ",
@@ -90,12 +92,12 @@
       {
         "value": "2x",
         "label": "Productivity",
-        "description": "Silvopasture systems can double land productivity by combining timber, livestock, and biodiversity."
+        "description": "Silvopasture systems combine timber, livestock, food trees and biodiversity."
       },
       {
         "value": "50%",
         "label": "Water Reduction",
-        "description": "Tree shade reduces pasture evaporation, cutting water needs in half while improving soil moisture."
+        "description": "The right trees give shade, increase soil moisture and cool livestock, reducing water use."
       },
       {
         "value": "30%",
@@ -110,8 +112,8 @@
     ]
   },
   "testimonial": {
-    "quote": "We've been using Moonochew guards for over a decade. They've transformed how we approach regenerative farming. We can now plant trees throughout our paddocks without losing grazing land. The guards have proven themselves through droughts, floods, and everything in between—and they still look brand new.",
-    "author": "David Scarabelotti",
+    "quote": "They've been through every extreme of drought, fire and fast-flowing flood water, and they're still like new.",
+    "author": "Brian Schneider",
     "role": "Cattle Farmer, NSW"
   },
   "cta": {

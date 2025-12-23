@@ -122,6 +122,8 @@ type HomeHero {
   badge: String
   headline: String
   headlineHighlight: String
+  headlineAccent: String
+  headlineAccentColor: String
   subheadline: String
   image: String
   imageAlt: String
@@ -232,6 +234,8 @@ input HomeHeroFilter {
   badge: StringFilter
   headline: StringFilter
   headlineHighlight: StringFilter
+  headlineAccent: StringFilter
+  headlineAccentColor: StringFilter
   subheadline: StringFilter
   image: ImageFilter
   imageAlt: StringFilter
@@ -1178,6 +1182,8 @@ input HomeHeroMutation {
   badge: String
   headline: String
   headlineHighlight: String
+  headlineAccent: String
+  headlineAccentColor: String
   subheadline: String
   image: String
   imageAlt: String

@@ -5,7 +5,7 @@
   },
   "hero": {
     "headline": "How Moonochew Works",
-    "subheadline": "A revolutionary system that transforms how we protect trees on working farms. Simple to install, impossible to destroy, designed to work with nature—not against it."
+    "subheadline": "A revolutionary system that transforms how we protect trees on working farms. Simple to install, designed to work with nature—not against it."
   },
   "installation": {
     "headline": "Installation in Three Simple Steps",
@@ -21,7 +21,7 @@
       {
         "number": "2",
         "title": "Plant & Protect",
-        "description": "Plant your sapling, then wrap the Moonochew guard around it. The spring steel naturally holds its shape—no stakes, no ties, no fuss.",
+        "description": "Wrap your Moonochew around your sapling, press in the inbuilt anchors. The spring steel naturally holds its shape—no stakes, no ties, no fuss.",
         "image": "/images/photos/moonochew-units-flat-before-assembly.jpg",
         "imageAlt": "Installing Moonochew tree guard"
       },
@@ -40,7 +40,7 @@
     "items": [
       {
         "title": "Stainless Spring Steel",
-        "description": "Type 301 stainless spring steel—the same material used in aircraft landing gear. This isn't ordinary steel.",
+        "description": "This is no ordinary wire.",
         "image": "/images/photos/close-up-of-moonochew.jpg",
         "imageAlt": "Stainless spring steel detail",
         "points": [

@@ -44,6 +44,9 @@ module.exports = {
         // Functional Colors
         'alert-rust': '#d4563a',          // Error/warning states
         'success-sprout': '#5cb85c',      // Success states
+
+        // Accent Colors
+        'davidson-plum': '#6B2D5B',       // Deep purple/burgundy - for "Growing Food" accent
       },
       fontFamily: {
         serif: ['Instrument Serif', 'Georgia', 'serif'],

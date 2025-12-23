@@ -76,6 +76,17 @@ export default function HomePageClient(props: HomePageClientProps) {
                 >
                   {content?.hero?.headlineHighlight}
                 </span>
+                {content?.hero?.headlineAccent && (
+                  <>
+                    <br />
+                    <span
+                      style={{ color: content?.hero?.headlineAccentColor || '#6B2D5B' }}
+                      data-tina-field={tinaField(content?.hero, 'headlineAccent')}
+                    >
+                      {content?.hero?.headlineAccent}
+                    </span>
+                  </>
+                )}
               </h1>
 
               {/* Subheadline */}

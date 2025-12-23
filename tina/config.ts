@@ -58,6 +58,8 @@ export default defineConfig({
               { type: "string", name: "badge", label: "Badge Text" },
               { type: "string", name: "headline", label: "Headline" },
               { type: "string", name: "headlineHighlight", label: "Headline Highlight (colored)" },
+              { type: "string", name: "headlineAccent", label: "Headline Accent Line" },
+              { type: "string", name: "headlineAccentColor", label: "Accent Color (hex)", description: "e.g. #6B2D5B for Davidson plum" },
               { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
               { type: "image", name: "image", label: "Hero Image" },
               { type: "string", name: "imageAlt", label: "Image Alt Text" },

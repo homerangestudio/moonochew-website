@@ -15,7 +15,7 @@
         "city": "Coraki, NSW",
         "country": "Australia"
       },
-      "email": "hello@moonochew.com.au",
+      "email": "moonochew@gmail.com",
       "responseTime": {
         "typical": "We typically respond within 24 hours",
         "hours": "Monday - Friday, 9am - 5pm AEST"
@@ -43,16 +43,12 @@
     "headline": "Frequently Asked Questions",
     "items": [
       {
-        "question": "What is Moonochew made from?",
-        "answer": "Moonochew tree guards are made from Type 301 stainless spring steel—the same material used in aircraft landing gear. This provides incredible strength, natural rust resistance, and the elasticity to return to its original shape after impact. The strategic barbing deters cattle without harming them."
-      },
-      {
         "question": "How long does shipping take?",
         "answer": "We ship Australia-wide with delivery typically taking 5-7 business days. Guards are shipped pre-folded for easy handling. You'll receive tracking information once your order is dispatched. For urgent orders or bulk shipments, please contact us directly."
       },
       {
         "question": "Does Moonochew work with all cattle breeds?",
-        "answer": "Yes! Moonochew has been tested for over 12 years with various cattle breeds including Angus, Hereford, dairy breeds, and even curious bulls. The barbed stainless steel design consistently deters cattle from rubbing or browsing on protected trees, regardless of breed or temperament."
+        "answer": "Moonochew is designed for use with domestic poll cattle. Moonochew has been tested for over 12 years with various cattle breeds including Angus, Hereford and dairy breeds. The barbed stainless steel design consistently deters domestic cattle from rubbing or browsing on protected trees. Though we have used Moonochew successfully with horned cattle and bulls, it is unrealistic to offer a guarantee against bulls, wild, or horned cattle."
       },
       {
         "question": "Do you offer bulk or wholesale pricing?",
@@ -61,6 +57,6 @@
     ],
     "ctaText": "Still have questions?",
     "ctaButtonText": "Email Us Directly",
-    "ctaEmail": "mailto:hello@moonochew.com.au"
+    "ctaEmail": "mailto:moonochew@gmail.com"
   }
 }

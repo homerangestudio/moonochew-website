@@ -10,6 +10,8 @@ fragment HomeParts on Home {
     badge
     headline
     headlineHighlight
+    headlineAccent
+    headlineAccentColor
     subheadline
     image
     imageAlt
